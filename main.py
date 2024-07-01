@@ -1,10 +1,8 @@
 import streamlit as st
-from streamlit_geolocation import streamlit_geolocation
-import pandas as pd
+from streamlit_js_eval import streamlit_js_eval, copy_to_clipboard, create_share_link, get_geolocation
+import json
 
-button = st.button('Press here')
-if button:
-  location = streamlit_geolocation()
-  st.markdown(str(location))
-
-
+if st.checkbox("Check my location"):
+    loc = get_geolocation()
+    st.write(f"Your coordinates are {loc}")
+    
