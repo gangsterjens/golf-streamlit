@@ -17,5 +17,5 @@ if loc:
     st.dataframe(df2)
 
 
-#st.map(
+st.map(df2)
     
