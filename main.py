@@ -12,8 +12,8 @@ if st.checkbox("Check my location"):
 if loc:
     df = pd.DataFrame(loc)
     st.markdown(df.columns)
-    df2 = df.pivot(index='coords')
-    st.dataframe(df2)
+    #df2 = df.pivot(index='coords')
+    st.dataframe(df)
 
 
 #st.map(
