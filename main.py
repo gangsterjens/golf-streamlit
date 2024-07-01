@@ -17,5 +17,5 @@ if loc:
     st.dataframe(df2)
 
 
-st.map(df2)
+st.map(df2, latitude='latitude', longitude='longitude')
     
