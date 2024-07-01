@@ -13,7 +13,7 @@ if loc:
     df = pd.DataFrame(loc)
     st.markdown(df.columns)
     df2 = df.T
-    df2 = df2.iloc[0]
+    df2 = df2.head(1)
     st.dataframe(df2)
 
 
