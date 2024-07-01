@@ -8,9 +8,11 @@ if st.checkbox("Check my location"):
     st.write(f"Your coordinates are {loc}")
 
 
-df = pd.DataFrame(loc)
 
-st.dataframe(df)
+if loc:
+    df = pd.DataFrame(loc)
+    df2 = df.pivot(index=coords)
+    st.dataframe(df2)
 
 
 #st.map(
